@@ -59,6 +59,7 @@ public class SecurityConfiguration {
         http
                 // Redirect to the login page when not authenticated from the
                 // authorization endpoint
+                //Moving ahead of feature
                 .exceptionHandling((exceptions) -> exceptions
                         .defaultAuthenticationEntryPointFor(
                                 new LoginUrlAuthenticationEntryPoint("/login"),
